@@ -1,5 +1,4 @@
 import SelectColorButton from "./SelectColorButton"
-
 const ColorPicker = () => {
   return (
     <div>
@@ -22,5 +21,4 @@ const ColorPicker = () => {
     </div>
   )
 }
-
 export default ColorPicker

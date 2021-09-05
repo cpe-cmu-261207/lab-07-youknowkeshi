@@ -1,21 +1,12 @@
-type SelectColorButtonProps = {
-  color: string;
-}
+import { Clear, randomCol } from "../stores/PixelPainterStore"
 
-const SelectColorButton = ({ color }: SelectColorButtonProps) => {
-
-  //modify this function to highlight correctly
-  const computeRingSize = () => {
-    return ""
-    return "ring-8 ring-green-400"
-  }
-
+const Utility = () => {
   return (
-    <div className={`${computeRingSize()} rounded-md border-black border-2 w-12 h-12 cursor-pointer`}
-      style={{ backgroundColor: color }}
-    >
+    <div className="flex justify-center space-x-3">
+      <button className="w-36" onClick={()=>Clear()}>Clear</button>
+      <button className="w-36" onClick={()=>randomCol()}>Random color</button>
     </div>
   )
 }
 
-export default SelectColorButton
+export default Utility
